@@ -1,0 +1,32 @@
+Chú thích mở rộng
+- Load lại danh mục cộng diểm sau khi cộng điểm cho một sinh viên
+- Sao chép học viên từ lớp khác
+->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Check lại api trong thêm và cập nhật lớp
+- Ảnh nền và ảnh đại diện từ link
+- Có thời gian thì xem lại validation trùng tên khi update
+- check sau category/api/list, category/api/search_full',['id'=> ':slug'])
+- Bắt bắt đầu kết thúc tất cả các form
+- Kiểm tra đầu vào một số hàm thêm hay sửa phải là mảng
+- Thêm và sửa luôn phải có validation
+- Kiểm tra sắp xếp trên tất cả các tài khoản
+- Khi một mục ẩn thì ẩn các mục liên quan, khôi phục cũng vậy
+- Xem lại khi chỉnh sửa thì đổi key các mục thứ cấp liên quan
+- Bắt validation cho form sửa bảng đăng ký
+- Xem chi tiết mục con
+var table = $('#tablePoint').DataTable();
+                    table.destroy();
+                    $('#tbBodyPoint').html(html);
+                    $('#tablePoint').DataTable();
+					
+					
+$validator = Validator::make($request->all(), [
+    "name"    => "required|array|min:3",
+    "name.*"  => "required|string|distinct|min:3",
+]);					
+key1544407041
+@if(\App\Http\Controllers\RouteViewController::routeView('users/{role}'))
+
+@endif
+
+1544011582
+$2y$10$a4njM2Y35sFpqETvJE8MC.mV.BF.E6gO8d81l3kV0O6BIoEqKnZO.

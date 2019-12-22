@@ -1,0 +1,323 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+td{
+    font-size: 1rem !important;
+}
+th{
+    font-size: 1rem !important;
+}
+.main-menu.menu-light .navigation {
+    /*background: #F4F5E9;*/
+}
+/*Đoạn này dùng cho radio button*/
+.checkboxes-and-radios {
+    margin: 5px auto 0;
+    /*width: 280px;*/
+    padding: 15px;
+    background: #fafafa;
+}
+.checkboxes-and-radios input {
+    display: none;
+}
+.checkboxes-and-radios label {
+    cursor: pointer;
+    padding-right: 35px;
+    position: relative;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+}
+.checkboxes-and-radios input[type=checkbox], .checkboxes-and-radios input[type=radio] {
+    position: absolute;
+    visibility: hidden !important;
+}
+.checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:before, .checkboxes-and-radios input[type=radio] + label:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -7.5px;
+    box-sizing: border-box;
+}
+.checkboxes-and-radios input[type=checkbox] + label:before, .checkboxes-and-radios input[type=radio] + label:before {
+    width: 30px;
+    height: 15px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e4e3e1;
+    border-radius: 15px;
+}
+.checkboxes-and-radios input[type=checkbox] + label:after, .checkboxes-and-radios input[type=radio] + label:after {
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    background: #BDBDBD;
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+}
+.checkboxes-and-radios input[type=checkbox]:checked + label:after, .checkboxes-and-radios input[type=radio]:checked + label:after {
+    right: 0;
+    background: #FF9800;
+}
+/*Đoạn này dùng cho radio button*/
+#entity_body{
+    height: auto !important;
+    min-height: 720px;
+
+}
+
+.container-l {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-l input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-l:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-l input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-l input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-l .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 6px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* The nng */
+.nng {
+    display: block;
+    position: relative !important;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.nng input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.nng .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.nng:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.nng input:checked ~ .checkmark {
+    background-color: #28d094;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.nng .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.nng input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.nng .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.nng input:checked ~ .checkmark_del {
+    background-color: #f44336;
+}
+.heading-elements .list-inline {
+    display: inherit !important;
+}
+
+.buttons-copy{
+
+}
+.buttons-excel{
+
+}
+.buttons-csv{
+
+}
+.buttons-pdf{
+
+}
+/*.modal-open .modal, .fade.show, .swal-overlay{*/
+    /*background-color: rgba(2, 2, 2, 0.77);*/
+/*}*/
+.logicDelete .swal-title{
+    background-color: #FF9149;
+}
+.physicalDelete .swal-title{
+    background-color: #FF4961;
+}
+.successAction .swal-title{
+    background-color: #1E9FF2;
+}
+.ctrlRolesChange {
+    display: none;
+}
+/*.tagging .tag{*/
+    /*background: none repeat scroll 0 0 #464855 !important;*/
+/*}*/
+/*.tagging .tag span{*/
+    /*background: none repeat scroll 0 0 #252731 !important;*/
+/*}*/
+
+
+
+
+
+.swal-title:not(:last-child) {
+    margin-bottom: 0;
+    padding-top: 20px;
+    color: #fff0ff;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.swal-title:first-child {
+    font-size: 1.2rem;
+    margin-top: 0 ;
+    padding-bottom: 20px;
+}
+.swal-text{
+    padding-top: 20px;
+    color: #6b6f82;
+    text-align: center;
+}
+.swal-modal{
+    background-color: #f5f5f5;
+}
+.border-radius{
+    border-radius: 0.5rem;
+}
+.card-header .card-title {
+    margin-right: 4.5rem !important;
+}
+.nns-small-card{
+    padding-bottom: 0.5rem;
+    min-height: 1rem;
+}
+
+/*//Tùy chỉnh padding cho card content trng modal*/
+.modal .card-header{
+    padding: 1rem 1rem;
+}
+.modal .heading-elements{
+    top: 10px;
+    right: 10px;
+}
+.pagination{
+    display: inline-flex;
+}
+.nns-pagination {
+    display: inline-block;
+}
+
+.nns-pagination a,.nns-pagination span,.nns-pagination .page-item:first-child .page-link ,.nns-pagination .page-item:last-child .page-link{
+    color: black !important;
+    float: left;
+    padding: 6px 14px;
+    text-decoration: none;
+    transition: background-color .3s;
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 2px;
+    border: 1px solid #fff !important;
+}
+.nns-pagination span{
+    color: #fff !important;
+    border: 1px solid #FF4961 !important;
+}
+
+.nns-pagination a.active,.nns-pagination .page-item.active .page-link {
+    background-color: #FF4961;
+    color: white;
+}
+
+.nns-pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.table th, .table td {
+    padding: 0.5rem 2rem;
+}
